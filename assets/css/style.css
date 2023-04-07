@@ -206,7 +206,7 @@ float: right;
   
   /* Idle State of the stars */
   .rating-stars ul > li.star > i.fa {
-    font-size:1.5em; /* Change the size of the stars */
+    font-size:1em; /* Change the size of the stars */
     color:#ccc; /* Color on idle state */
   }
   
