@@ -1,0 +1,28 @@
+/*
+*       SOFTWARE FLARE
+*   RULES FOR WRITTING CSS
+*
+* 1. Use lowercase
+* Example: .btn-primary { ... }
+* Avoid: .btn-Primary { ... }, .btn_Primary { ... }, .btnPrimary { ... }, .BTN-PRIMARY { ... }, .BTN_PRIMARY { ... }, .BTNPRIMARY { ... }
+*
+* 2. Use hyphens to separate words
+* Example: .btn-primary { ... }
+* Avoid: .btnPrimary { ... }, .btn_primary { ... }, .btnprimary { ... }
+*
+* 3. Avoid using default tags for styling: When writing CSS, it's essential to avoid using default HTML tags as selectors (e.g., 'button', 'a', 'p', etc.) for styling elements. This can lead to unintended consequences and make the code difficult to maintain. Instead, use class-based selectors for more specific and precise styling.
+* Example: .btn-primary { ... }
+* Avoid: button { ... }, a { ... }, p { ... }
+*
+* 4. Use custom class names for buttons: To style buttons, it's a good practice to create custom class names that describe their purpose, appearance, or functionality. For example, instead of using a generic '.btn' class, create more specific classes like '.btn-primary', '.btn-secondary', or '.btn-customname'. This will make it easier to identify and manage button styles throughout the project.
+* Example: <button class="btn btn-customname">Custom Button</button>
+* Avoid: <button class="btn">Custom Button</button>, <button class="csa-btn">Custom Button</button>, <button>Custom Button</button>
+*
+* 5. Avoid combining button classes with parent elements or classes: As you've mentioned, avoid using selectors like '.parent-class .btn-customname', '.parent-class form .btn-customname', or 'form .btn-customname'. Instead, apply the specific button classes directly to the button elements in your HTML code
+* Example: <button class="btn btn-customname">Custom Button</button>
+* Avoid: <div class="parent-class"><button class="btn btn-customname">Custom Button</button></div>
+* Avoid: <form><button class="btn btn-customname">Custom Button</button></form>
+*
+*
+*  Let Me know if you have any question.
+**/
