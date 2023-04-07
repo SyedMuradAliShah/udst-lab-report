@@ -26,10 +26,14 @@
 *
 *  Let Me know if you have any question.
 **/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto Slab', serif !important;
 }
 a{
     text-decoration: none;
@@ -60,14 +64,28 @@ padding: 10px;
 #emergency h6{
     color: #0055b8;
 }
-.navbar{
+.navigation{
     border-bottom: 2px solid #0055b8;
     padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
 }
-.navbar .logo a{
+.navigation .logo a{
     font-size: 20px;
     color: black;
     font-weight: 600;
+}
+.navigation .navbar{
+    display: none;
+}
+.brand-name{
+    font-size: 25px;
+}
+.logo{ 
+    display: flex;
+    align-items: center;
 }
 .tab{
     border-bottom: 2px solid #0055b8;
@@ -128,6 +146,7 @@ footer a{
 .images{
     margin: 0 auto;
     display: block;
+    width: 100%;
 }
 #Cars2{
     display: none;
@@ -138,4 +157,20 @@ footer a{
 .login{
     border: 1px solid #80808082;
     padding: 40px 20px 20px 20px;
+}
+
+@media (min-width: 320px) and (max-width: 620px){
+    .footer-box{
+        display: block;
+        text-align: center;
+    }
+    .footer-box div{
+    padding: 10px;
+    }
+    .logo{
+        display: block;
+    }
+    .navigation .navbar{
+        display: block;
+    }
 }
