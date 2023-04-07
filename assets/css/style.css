@@ -135,3 +135,7 @@ footer a{
 #Cars2 textarea{
     height: 150px;
 }
+.login{
+    border: 1px solid #80808082;
+    padding: 40px 20px 20px 20px;
+}
