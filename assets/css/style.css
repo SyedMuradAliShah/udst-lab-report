@@ -192,12 +192,41 @@ footer a{
 .profile-detail p span{
 float: right;
 }
-.stars i{
-    color: #858585;
-}
-.stars i:hover{
-    color: #ffb100;
-}
+
+/* Rating Star Widgets Style */
+.rating-stars ul {
+    list-style-type:none;
+    padding:0;
+    
+  }
+  .rating-stars ul > li.star {
+    display:inline-block;
+    
+  }
+  
+  /* Idle State of the stars */
+  .rating-stars ul > li.star > i.fa {
+    font-size:1.5em; /* Change the size of the stars */
+    color:#ccc; /* Color on idle state */
+  }
+  
+  /* Hover state of the stars */
+  .rating-stars ul > li.star.hover > i.fa {
+    color:#FFCC36;
+  }
+  
+  /* Selected state of the stars */
+  .rating-stars ul > li.star.selected > i.fa {
+    color:#FF912C;
+  }
+  .question-star{
+    position: relative;
+  }
+  .rating-widget{
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 @media (min-width: 320px) and (max-width: 620px){
     .dasboard-nav{
         display: none;
