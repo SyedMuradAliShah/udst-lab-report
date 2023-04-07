@@ -228,6 +228,7 @@ float: right;
     top: 0;
   }
 @media (min-width: 320px) and (max-width: 620px){
+   
     .dasboard-nav{
         display: none;
     }    
@@ -259,5 +260,13 @@ float: right;
     }
     .dasboard-table table{
         width: max-content;
+    }
+    .rating-widget{
+        position: relative;
+        width: 100%;
+        float: inherit !important;
+    }
+    .rating-stars{
+        text-align: left !important;
     }
 }
