@@ -8,6 +8,7 @@
     <title>Sport and Wellness - Reports</title>
     <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
 
     <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -15,6 +16,41 @@
 </head>
 
 <body>
+  <div class="container">
+    <div class="row">
+        <div class="navigation mb-3">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </div>
+              </nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/pics/logo-mobile.png" alt="" width="165px"> 
+            </a>
+        </div>
+        <div class="brand-name">
+            <h2>Sample Test Lab</h2>
+        </div>
+        <div class="dasboard-nav">
+          <a href="" class="btn-primary">Profile</a>
+          <a href="" class="btn-primary">Logout</a>
+        </div>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="profile.html">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Logout</a>
+        </li>
+      </ul>
+    </div>
+</div>
+</div>
     <div class="container">
         <!-- Design the reports page here, including the following: -->
         <!-- 1. A table with the following columns: -->
@@ -25,33 +61,93 @@
         <!-- Action -->
         <!-- i. A button to add a new report -->
         <!-- ii. A button to view a report -->
-        <table class="table table-dark table-hover table-responsive">
+        <div class="dasboard-table">
+        <table class="table table-bordered table-striped table-hover table-responsive">
             <thead>
               <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
+                <th scope="col">ID</th>
+                <th scope="col">Test Name</th>
+                <th scope="col">Date</th>
+                <th scope="col">Status</th>
+                <th scope="col">Action</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
+                <td>133456</td>
+                <td>namee</td>
+                <td>15/02/2023</td>
+                <td>active</td>
+                <td>
+                  <button class="btn-primary">Add New Report</button>
+                  <button class="btn-primary">View Report</button>
+                </td>
               </tr>
               <tr>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
+                <td>133456</td>
+                <td>namee</td>
+                <td>15/02/2023</td>
+                <td>active</td>
+                <td>
+                  <button class="btn-primary">Add New Report</button>
+                  <button class="btn-primary">View Report</button>
+                </td>
               </tr>
               <tr>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
+                <td>133456</td>
+                <td>namee</td>
+                <td>15/02/2023</td>
+                <td>active</td>
+                <td>
+                  <button class="btn-primary">Add New Report</button>
+                  <button class="btn-primary">View Report</button>
+                </td>
+              </tr>
+              <tr>
+                <td>133456</td>
+                <td>namee</td>
+                <td>15/02/2023</td>
+                <td>active</td>
+                <td>
+                  <button class="btn-primary">Add New Report</button>
+                  <button class="btn-primary">View Report</button>
+                </td>
               </tr>
             </tbody>
           </table>
+        </div>
     </div>
+    <footer class="mt-5">
+      <div class="container">
+          <div class="row">
+              <div class="footer-box">
+              <div>
+                  <img src="assets/pics/logo-desktop.png" alt="" width="80px">
+              </div>
+              <div>
+                  <p>University of Doha for Science and Technology <br>
+                      68 Al Tarafa, Duhail North <br> Doha, Qatar</p>
+                      <p> Tel.: +974 4495 2222</p>
+              </div>
+              <div class="text-center">
+                  <a href=""><i class="fa-solid fa-location-dot"></i> Find our campus on the map</a>
+              </div>
+              <div class="social-media">
+                  <a href="">
+                      <img src="assets/pics/facebook.png" alt="">
+                  </a>
+                  <a href="">
+                      <img src="assets/pics/twitter.png" alt="">
+                  </a>
+                  <a href="">
+                      <img src="assets/pics/insta.png" alt="">
+                  </a>
+                  <p>2023 © University of Doha for Science and Technology</p>
+              </div>
+              </div>
+          </div>
+      </div>
+  </footer>
 </body>
 
 </html>

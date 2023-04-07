@@ -16,18 +16,123 @@
 
 <body>
     <div class="container">
+        <div class="row">
+            <div class="navigation mb-3">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      
+                    </div>
+                  </nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/pics/logo-mobile.png" alt="" width="165px"> 
+                </a>
+                
+            </div>
+            <div class="brand-name">
+                <h2>Sample Test Lab</h2>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="register.html">Register</a>
+              </li>
+            </ul>
+          </div>
+    </div>
+</div>
+    <div class="container border p-4">
         <!-- Design a page with a form that allows the user to make a request for a sport or wellness. -->
 
         <!-- It will contain current user details and a textarea for information about the request. -->
 
         <!-- And a button to submit the request. -->
         <div class="request-form">
+            <h4 class="pb-2">Make a Request</h4>
+            <div class="border-top mb-4"></div>
             <form action="">
-                <div class="col-12 col-xl-6"></div>
+                <div class="col-12 col-xl-12">
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-6 col-xl-6 col-md-12 mb-3">
+                            <div class="mb-3">
+                                <label for="first" class="form-label">First Name*</label>
+                                <input type="text" class="form-control" id="first" placeholder="First Name">
+                              </div>
+                              
+                        </div>
+                        <div class="col-sm-6 col-lg-6 col-xl-6 col-md-12  mb-3">
+                            <div class="mb-3">
+                                <label for="last" class="form-label">Last Name*</label>
+                                <input type="text" class="form-control" id="last" placeholder="Last Name">
+                              </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-6 col-xl-6 col-md-12 mb-3">
+                            <div class="mb-3">
+                                <label for="Phone" class="form-label">Phone</label>
+                                <input type="text" class="form-control" id="Phone" placeholder="Phone">
+                              </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-6 col-xl-6 col-md-12 mb-3">
+                            
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Email address">
+                              </div>
+                        </div>
+                        
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Write Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+                      </div>
+                </div>
+                <div class="col-6 mt-4">
+                    <button class="btn btn-primary" type="button">Submit</button>
+                  </div>
             </form>
         </div>
 
     </div>
+    <footer class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="footer-box">
+                <div>
+                    <img src="assets/pics/logo-desktop.png" alt="" width="80px">
+                </div>
+                <div>
+                    <p>University of Doha for Science and Technology <br>
+                        68 Al Tarafa, Duhail North <br> Doha, Qatar</p>
+                        <p> Tel.: +974 4495 2222</p>
+                </div>
+                <div class="text-center">
+                    <a href=""><i class="fa-solid fa-location-dot"></i> Find our campus on the map</a>
+                </div>
+                <div class="social-media">
+                    <a href="">
+                        <img src="assets/pics/facebook.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="assets/pics/twitter.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="assets/pics/insta.png" alt="">
+                    </a>
+                    <p>2023 © University of Doha for Science and Technology</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

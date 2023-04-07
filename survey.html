@@ -16,6 +16,39 @@
 
 <body>
     <div class="container">
+        <div class="row">
+            <div class="navigation mb-3">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      
+                    </div>
+                  </nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/pics/logo-mobile.png" alt="" width="165px"> 
+                </a>
+                
+            </div>
+            <div class="brand-name">
+                <h2>Sample Test Lab</h2>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="register.html">Register</a>
+              </li>
+            </ul>
+          </div>
+    </div>
+</div>
+    <div class="container border p-4">
         <!-- This is survey page -->
         <!-- Please complete the survey by rating your experience on a scale of 1-5, with 1 being strongly disagree and 5
         being strongly agree: -->
@@ -32,8 +65,79 @@
         <!-- Please add a text box to the last question -->
         <!-- Please add a submit button -->
 
-
+        <div class="survey">
+            <h4 class="pb-2">Survey</h4>
+            <div class="border-top mb-4"></div>
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="survey-1" value="survey-1">
+                <label class="form-check-label" for="survey-1">
+                    The lab staff was knowledgeable and professional
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="survey-2" value="survey-2">
+                <label class="form-check-label" for="survey-2">
+                    The lab staff communicated clearly and effectively
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="survey-3" value="survey-3">
+                <label class="form-check-label" for="survey-3">
+                    The lab services were reasonable priced
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="survey-4" value="survey-4">
+                <label class="form-check-label" for="survey-4">
+                    The lab services were completed in a timely manner
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="survey-5" value="survey-5">
+                <label class="form-check-label" for="survey-5">
+                    Please advise if you have any upcoming testing needs:
+                </label>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Write Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+              </div>
+              <div class="col-6 mt-4">
+                <button class="btn btn-primary" type="button">Submit</button>
+              </div>
+        </div>
     </div>
+    <footer class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="footer-box">
+                <div>
+                    <img src="assets/pics/logo-desktop.png" alt="" width="80px">
+                </div>
+                <div>
+                    <p>University of Doha for Science and Technology <br>
+                        68 Al Tarafa, Duhail North <br> Doha, Qatar</p>
+                        <p> Tel.: +974 4495 2222</p>
+                </div>
+                <div class="text-center">
+                    <a href=""><i class="fa-solid fa-location-dot"></i> Find our campus on the map</a>
+                </div>
+                <div class="social-media">
+                    <a href="">
+                        <img src="assets/pics/facebook.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="assets/pics/twitter.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="assets/pics/insta.png" alt="">
+                    </a>
+                    <p>2023 © University of Doha for Science and Technology</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

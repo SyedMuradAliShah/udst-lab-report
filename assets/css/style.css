@@ -50,6 +50,8 @@ a{
     background-color: #0055b8 !important;
     padding: 10px 20px;
     font-weight: 500;
+    color: white;
+    border: none;
 }
 .form-inputs h4 {
 background-color: #0055b8;
@@ -71,7 +73,13 @@ padding: 10px;
     flex-wrap: wrap;
     justify-content: start;
     align-items: center;
+    position: relative;
 }
+.dasboard-nav{
+    position: absolute;
+    right: 0;
+}
+
 .navigation .logo a{
     font-size: 20px;
     color: black;
@@ -165,7 +173,29 @@ footer a{
 .navbar-collapse{
     box-shadow: 0px 3px 8px gray;
 }
+.dasboard-table{
+    overflow: auto;
+}
+.dasboard-table table{
+    width: 100%;
+}
+.dasboard-table table td .btn-primary{
+    padding: 6px;
+}
+.profile-detail p{
+    margin: 5px auto;
+    width: 90%;
+    border-bottom: 1px solid #dde2e6;
+    padding: 5px 0px;
+    font-weight: 500;
+}
+.profile-detail p span{
+float: right;
+}
 @media (min-width: 320px) and (max-width: 620px){
+    .dasboard-nav{
+        display: none;
+    }    
     
     .footer-box{
         display: block;
@@ -192,5 +222,7 @@ footer a{
         font-size: 15px;
 
     }
-
+    .dasboard-table table{
+        width: max-content;
+    }
 }
