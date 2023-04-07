@@ -26,3 +26,32 @@
 *
 *  Let Me know if you have any question.
 **/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.content{
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px #80808029;
+}
+.btn-primary{
+    background-color: #6204f8 !important;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+.form-inputs h4 {
+background-color: #7f30ff;
+color: white;
+padding: 10px;
+}
+#emergency{
+    background-color: #80808026;
+    padding: 10px;
+    border-radius: 10px;
+}
+#emergency h6{
+    color: #6204f8;
+}
