@@ -192,6 +192,12 @@ footer a{
 .profile-detail p span{
 float: right;
 }
+.rating i{
+    color: #858585;
+}
+.rating i:hover{
+    color: #ffb100;
+}
 @media (min-width: 320px) and (max-width: 620px){
     .dasboard-nav{
         display: none;
