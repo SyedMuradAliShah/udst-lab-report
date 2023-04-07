@@ -206,13 +206,21 @@
                                         <p class="m-0">Do you have any medical condition?</p>
                                         </div>
                                         <div class="col-sm-6 col-lg-6 col-xl-6 col-md-12  mt-3 mb-3">
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="forYes" value="forYes">
-                                                <label class="form-check-label" for="forYes">Yes</label>
-                                              </div>
-                                              <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="forNo" value="forNo">
-                                                <label class="form-check-label" for="forNo">No</label>
+                                            <div id="myRadioGroup">
+                                                <label for="yes" class="me-3">
+                                                <input type="radio" name="opt" value="2"  /> Yes
+                                                </label>
+                                                <label for="no" class="me-3">
+                                                <input type="radio" name="opt" value="3" />No
+                                                </label>
+                                                
+                                                
+                                            </div>
+                                        </div>
+                                        <div id="Cars2" class="desc mb-4">
+                                            <div class="form-floating">
+                                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                                                <label for="floatingTextarea">Please describe your Condition</label>
                                               </div>
                                         </div>
                                 </div>
@@ -266,23 +274,39 @@
                     <img src="assets/pics/logo-desktop.png" alt="" width="80px">
                 </div>
                 <div>
-                    <p>University of Doha for Science and Technology</p>
-                    <p> 68 Al Tarafa, Duhail North</p>
-                    <p>Doha, Qatar</p>
-                    <p> Tel.: +974 4495 2222</p>
+                    <p>University of Doha for Science and Technology <br>
+                        68 Al Tarafa, Duhail North <br> Doha, Qatar</p>
+                        <p> Tel.: +974 4495 2222</p>
                 </div>
-                <div>
-                    <a href="">Find our campus on the map</a>
+                <div class="text-center">
+                    <a href=""><i class="fa-solid fa-location-dot"></i> Find our campus on the map</a>
                 </div>
                 <div class="social-media">
-                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href=""><i class="fa-brands fa-twitter"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href="">
+                        <img src="assets/pics/facebook.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="assets/pics/twitter.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="assets/pics/insta.png" alt="">
+                    </a>
+                    <p>2023 © University of Doha for Science and Technology</p>
                 </div>
                 </div>
             </div>
         </div>
     </footer>
+    <script>
+        $(document).ready(function() {
+    $("input[name$='opt']").click(function() {
+        var test = $(this).val();
+
+        $("div.desc").hide();
+        $("#Cars" + test).show();
+    });
+});
+    </script>
 </body>
 
 </html>
