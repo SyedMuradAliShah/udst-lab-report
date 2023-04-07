@@ -31,6 +31,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+}
 .content{
     background-color: #f9f9f9;
     border-radius: 10px;
@@ -54,4 +57,32 @@ padding: 10px;
 }
 #emergency h6{
     color: #6204f8;
+}
+.navbar{
+    border-bottom: 2px solid #6204f8;
+    padding: 2rem;
+}
+.tab{
+    border-bottom: 2px solid #6204f8;
+    padding-bottom: 9px;
+}
+.tab .account-btn{
+    padding: 10px 20px;
+    color: #6204f8;
+}
+.tab .active{
+    background-color: #6204f8;
+    color: white !important;
+}
+.login{
+
+}
+.form-side{
+    width: 100%;
+}
+.contactus{
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px #b3b3b329;
 }
