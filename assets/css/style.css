@@ -35,18 +35,20 @@ a{
     text-decoration: none;
 }
 .content{
-    background-color: #f9f9f9;
+    background-color: #eeeeee;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0px 4px 10px #80808029;
+}
+.content p{
+    color: red;
 }
 .btn-primary{
-    background-color: #6204f8 !important;
+    background-color: #0055b8 !important;
     padding: 10px 20px;
     font-weight: 500;
 }
 .form-inputs h4 {
-background-color: #7f30ff;
+background-color: #0055b8;
 color: white;
 padding: 10px;
 }
@@ -56,33 +58,63 @@ padding: 10px;
     border-radius: 10px;
 }
 #emergency h6{
-    color: #6204f8;
+    color: #0055b8;
 }
 .navbar{
-    border-bottom: 2px solid #6204f8;
+    border-bottom: 2px solid #0055b8;
     padding: 2rem;
 }
+.navbar .logo a{
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+}
 .tab{
-    border-bottom: 2px solid #6204f8;
+    border-bottom: 2px solid #0055b8;
     padding-bottom: 9px;
 }
 .tab .account-btn{
     padding: 10px 20px;
-    color: #6204f8;
+    color: #0055b8;
 }
 .tab .active{
-    background-color: #6204f8;
+    background-color: #0055b8;
     color: white !important;
-}
-.login{
-
 }
 .form-side{
     width: 100%;
 }
 .contactus{
-    background-color: #f9f9f9;
+    background-color: #eeeeee;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0px 4px 10px #b3b3b329;
+}
+.container{
+    max-width: 960px;
+}
+footer{
+    background-color: #0055b8;
+}
+.footer-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    color: white;
+}
+footer a{
+    color: white;
+}
+.social-media a{
+    border: 1px solid white;
+    padding: 10px 0px;
+    border-radius: 10px;
+    width: 45px;
+    display: inline-block;
+    text-align: center;
+}
+.images{
+    margin: 0 auto;
+    display: block;
 }
