@@ -58,13 +58,14 @@ background-color: #0055b8;
 color: white;
 padding: 10px;
 }
-#emergency{
-    background-color: #80808026;
+.new-request{
+    background-color: #dadada26;
     padding: 10px;
     border-radius: 10px;
 }
-#emergency h6{
+.new-request h6{
     color: #0055b8;
+    font-size: 1.3rem;
 }
 .navigation{
     border-bottom: 2px solid #0055b8;
@@ -226,6 +227,19 @@ float: right;
     position: absolute;
     right: 0;
     top: 0;
+  }
+  .hide {
+    display: none;
+  }
+  .hidden {
+    display: none;
+  /*   opacity: 0; */
+  }
+  
+  .shown {
+    display: visible;
+    transition: all .5s ease-out;
+    opacity: 1;
   }
 @media (min-width: 320px) and (max-width: 620px){
    
