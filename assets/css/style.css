@@ -233,6 +233,7 @@ float: right;
   }
   .hidden {
     display: none;
+    padding: 10px 25px;
   /*   opacity: 0; */
   }
   
