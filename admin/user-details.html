@@ -5,29 +5,182 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sport and Wellness - User Details</title>
+    <title>Sport and Wellness - Admin Add</title>
     <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
 
     <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    
 </head>
 
 <body>
-    <div class="container">
-        <!-- Show the user details with the following information: -->
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Admin</h3>
+                <nav class="navbar navbar-expand-lg">
+    
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                    </button>
+            </nav>
+            </div>
+    
+            <ul class="list-unstyled components">
+    
+                <li>
+                    <a href="dashboard.html">Dashboard</a>
+                </li>
+                <li>
+                    <a href="admin-add.html">Add Admin</a>
+                </li>
+                <li>
+                    <a href="admins.html">Admins</a>
+                </li>
+                <li>
+                    <a href="email-template.html">Email Templates</a>
+                </li>
+                <li>
+                    <a href="request-analysis-form.html">Request Analysis</a>
+                </li>
+                <li>
+                    <a href="request.html">Requests</a>
+                </li>
+                <li>
+                    <a href="staff-add.html">Add Staff</a>
+                </li>
+                <li>
+                    <a href="staff.html">Staffs</a>
+                </li>
+                <li>
+                    <a href="survey.html">Survey</a>
+                </li>
+                <li>
+                    <a href="users.html"  class="active">User</a>
+                </li>
+            </ul>
+        </nav>
+    
+        <!-- Page Content  -->
+        <div id="content">
+            <div class="container border p-4">
+                <div class="profile-detail">
+                    <h4 class="pb-2">User Detail</h4>
+                    <div class="border-top mb-4"></div>
+                    <div class="row">
+                        <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <p>Name : <span>Sulaiman Khan</span></p>
+                            <p>Institution : <span>xxxxx</span></p>
+                            <p>Address : <span>xxxxx</span></p>
+                            
+                        </div>
+                        <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <p>Email : <span>xxxxx</span></p>
+                            <p>Phone : <span>03123456789</span></p>
+                            <p>Password : <span>xxxxx</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <!-- All details in submitted via registration form-->
+            <div class="container">
+                <h4 class="mt-5">Requests</h4>
+                    <div class="border-top mb-4"></div>
+                <div class="dasboard-table">
+                  <table class="table table-bordered table-striped table-hover table-responsive">
+                      <thead>
+                        <tr>
+                          <th scope="col">Request ID</th>
+                          <th scope="col">Request Date </th>
+                          <th scope="col">Request Status</th>
+                          <th scope="col">Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>12345</td>
+                          <td>12/12/12</td>
+                          <td>Active</td>
+                          <td>
+                            <a href="request-details.html" class="btn-primary">Request Details</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>12345</td>
+                          <td>12/12/12</td>
+                          <td>Active</td>
+                          <td>
+                            <a href="request-details.html" class="btn-primary">Request Details</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>12345</td>
+                          <td>12/12/12</td>
+                          <td>Active</td>
+                          <td>
+                            <a href="request-details.html" class="btn-primary">Request Details</a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+        
+            </div>
 
-        <!-- Show a list of requests with the following information: -->
-
-        <!-- Request ID, Request Date, Request Status, Request Details -->
-
-        <!-- Show a list of surveys with the following information: -->
-
-        <!-- Survey ID, Request ID, Survey Status, Survey Date, Survey Details -->
+            <div class="container">
+                <h4 class="mt-5">Survey</h4>
+                    <div class="border-top mb-4"></div>
+                <div class="dasboard-table">
+                  <table class="table table-bordered table-striped table-hover table-responsive">
+                      <thead>
+                        <tr>
+                          <th scope="col">Survey ID</th>
+                          <th scope="col">Request ID</th>
+                          <th scope="col">Survey Date </th>
+                          <th scope="col">Survey Status</th>
+                          <th scope="col">Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>12345</td>
+                          <td>12345</td>
+                          <td>12/12/12</td>
+                          <td>Active</td>
+                          <td>
+                            <a href="survey-details.html" class="btn-primary">Survey Details</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>12345</td>
+                          <td>12345</td>
+                          <td>12/12/12</td>
+                          <td>Active</td>
+                          <td>
+                            <a href="survey-details.html" class="btn-primary">Survey Details</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>12345</td>
+                          <td>12345</td>
+                          <td>12/12/12</td>
+                          <td>Active</td>
+                          <td>
+                            <a href="survey-details.html" class="btn-primary">Survey Details</a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+        
+            </div>
+    
+        </div>
     </div>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

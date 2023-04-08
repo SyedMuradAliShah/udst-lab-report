@@ -5,20 +5,126 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sport and Wellness - Dashboard</title>
+    <title>Sport and Wellness - Admin Add</title>
     <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
 
     <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    
 </head>
 
 <body>
-    <div class="container">
-        <!-- Show how many requests are pending, approved and rejected. -->
-        <!-- Show how many surveys are pending, submitted. -->
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Admin</h3>
+                <nav class="navbar navbar-expand-lg">
+    
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                    </button>
+            </nav>
+            </div>
+    
+            <ul class="list-unstyled components">
+    
+                <li>
+                    <a href="dashboard.html" class="active">Dashboard</a>
+                </li>
+                <li>
+                    <a href="admin-add.html">Add Admin</a>
+                </li>
+                <li>
+                    <a href="admins.html" >Admins</a>
+                </li>
+                <li>
+                    <a href="email-template.html">Email Templates</a>
+                </li>
+                <li>
+                    <a href="request-analysis-form.html">Request Analysis</a>
+                </li>
+                <li>
+                    <a href="request.html">Requests</a>
+                </li>
+                <li>
+                    <a href="staff-add.html">Add Staff</a>
+                </li>
+                <li>
+                    <a href="staff.html">Staffs</a>
+                </li>
+                <li>
+                    <a href="survey.html">Survey</a>
+                </li>
+                <li>
+                    <a href="users.html">User</a>
+                </li>
+            </ul>
+        </nav>
+    
+        <!-- Page Content  -->
+        <div id="content">
+           <div class="container">
+            <h4 class="pb-2">Requests</h4>
+            <div class="border-top mb-4"></div>
+            <div class="row">
+                <div class="col-12 col-xl-3 col-lg-3 col-md-4 col-sm-12">
+                    <div class="card text-bg-primary mb-3 text-center">
+                        <div class="card-header">Requests Pending</div>
+                        <div class="card-body">
+                            <i class="fa-solid fa-arrows-spin" style="font-size: 40px;"></i>
+                          <h5 class="card-title mt-3" style="font-size: 40px;">10</h5>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-12 col-xl-3 col-lg-3 col-md-4 col-sm-12">
+                    <div class="card text-bg-success mb-3 text-center">
+                        <div class="card-header">Requests Approved</div>
+                        <div class="card-body">
+                            <i class="fa-solid fa-thumbs-up" style="font-size: 40px;"></i>
+                          <h5 class="card-title mt-3" style="font-size: 40px;">06</h5>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-12 col-xl-3 col-lg-3 col-md-4 col-sm-12">
+                    <div class="card text-bg-danger mb-3 text-center">
+                        <div class="card-header">Requests Rejected</div>
+                        <div class="card-body">
+                            <i class="fa-solid fa-circle-xmark" style="font-size: 40px;"></i>
+                          <h5 class="card-title mt-3" style="font-size: 40px;">06</h5>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <h4 class="pb-2">Surveys</h4>
+            <div class="border-top mb-4"></div>
+            <div class="row">
+                <div class="col-12 col-xl-3 col-lg-3 col-md-4 col-sm-12">
+                    <div class="card text-bg-primary mb-3 text-center">
+                        <div class="card-header">Survey Pending</div>
+                        <div class="card-body">
+                            <i class="fa-solid fa-arrows-spin" style="font-size: 40px;"></i>
+                          <h5 class="card-title mt-3" style="font-size: 40px;">10</h5>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-12 col-xl-3 col-lg-3 col-md-4 col-sm-12">
+                    <div class="card text-bg-success mb-3 text-center">
+                        <div class="card-header">Survey Approved</div>
+                        <div class="card-body">
+                            <i class="fa-solid fa-thumbs-up" style="font-size: 40px;"></i>
+                          <h5 class="card-title mt-3" style="font-size: 40px;">06</h5>
+                        </div>
+                      </div>
+                </div>
+            </div>
+           </div>
+    
+        </div>
     </div>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

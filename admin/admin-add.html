@@ -8,19 +8,136 @@
     <title>Sport and Wellness - Admin Add</title>
     <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
 
     <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    
 </head>
 
 <body>
-    <div class="container">
-        <!-- Show a form to add a new admin with the following information: -->
-
-        <!-- Admin Name, Admin Email, address, phone, Admin Password, Admin Status etc -->
-
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Admin</h3>
+                <nav class="navbar navbar-expand-lg">
+    
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                    </button>
+            </nav>
+            </div>
+    
+            <ul class="list-unstyled components">
+    
+                <li>
+                    <a href="dashboard.html">Dashboard</a>
+                </li>
+                <li>
+                    <a href="admin-add.html" class="active">Add Admin</a>
+                </li>
+                <li>
+                    <a href="admins.html">Admins</a>
+                </li>
+                <li>
+                    <a href="email-template.html">Email Templates</a>
+                </li>
+                <li>
+                    <a href="request-analysis-form.html">Request Analysis</a>
+                </li>
+                <li>
+                    <a href="request.html">Requests</a>
+                </li>
+                <li>
+                    <a href="staff-add.html">Add Staff</a>
+                </li>
+                <li>
+                    <a href="staff.html">Staffs</a>
+                </li>
+                <li>
+                    <a href="survey.html">Survey</a>
+                </li>
+                <li>
+                    <a href="users.html">User</a>
+                </li>
+            </ul>
+        </nav>
+    
+        <!-- Page Content  -->
+        <div id="content">
+            <div class="container border p-4">
+                <!-- Design a page with a form that allows the user to make a request for a sport or wellness. -->
+        
+                <!-- It will contain current user details and a textarea for information about the request. -->
+        
+                <!-- And a button to submit the request. -->
+                <div class="request-form">
+                    <h4 class="pb-2">Add Admin</h4>
+                    <div class="border-top mb-4"></div>
+                    <form action="">
+                        <div class="col-12 col-xl-12">
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-6 col-xl-6 col-md-12 mb-3">
+                                    <div class="mb-3">
+                                        <label for="Admin Name" class="form-label">Admin Name</label>
+                                        <input type="text" class="form-control" id="Admin Name" placeholder="Admin Name">
+                                      </div>
+                                      
+                                </div>
+                                <div class="col-sm-6 col-lg-6 col-xl-6 col-md-12  mb-3">
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Email address">
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-6 col-xl-6 col-md-12 mb-3">
+                                    
+                                    <div class="mb-3">
+                                        <label for="Address" class="form-label">Address</label>
+                                        <input type="text" class="form-control" id="Address" placeholder="Address">
+                                      </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-6 col-xl-6 col-md-12 mb-3">
+                                    <div class="mb-3">
+                                        <label for="Phone" class="form-label">Phone</label>
+                                        <input type="text" class="form-control" id="Phone" placeholder="Phone">
+                                      </div>
+                                </div>
+                                
+                                
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-6 col-xl-6 col-md-12 mb-3">
+                                    <div class="mb-3">
+                                        <label for="Password" class="form-label">Password</label>
+                                        <input type="Password" class="form-control" id="Password" placeholder="Password">
+                                      </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-6 col-xl-6 col-md-12 mb-3">
+                                    <label for="Password" class="form-label">Admin Status</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Status</option>
+                                        <option value="1">Active</option>
+                                        <option value="2">Deactive</option>
+                                      </select>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-6 mt-2">
+                            <button class="btn btn-primary" type="button">Add Admin</button>
+                          </div>
+                    </form>
+                </div>
+        
+            </div>
+    
+        </div>
     </div>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

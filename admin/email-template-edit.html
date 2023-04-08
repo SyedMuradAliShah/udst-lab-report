@@ -5,23 +5,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sport and Wellness - Email Template Edit</title>
+    <title>Sport and Wellness - Admin Add</title>
     <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
 
     <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    
 </head>
 
 <body>
-    <div class="container">
-        <!-- Please create a form to edit email template -->
-        <!-- Email template should have the following fields: -->
-        <!-- Input: Email Subject -->
-        <!-- Textarea: Email Body -->
-        <!-- Button: Save -->
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Admin</h3>
+                <nav class="navbar navbar-expand-lg">
+    
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                    </button>
+            </nav>
+            </div>
+    
+            <ul class="list-unstyled components">
+    
+                <li>
+                    <a href="dashboard.html">Dashboard</a>
+                </li>
+                <li>
+                    <a href="admin-add.html" >Add Admin</a>
+                </li>
+                <li>
+                    <a href="admins.html">Admins</a>
+                </li>
+                <li>
+                    <a href="email-template.html" class="active">Email Templates</a>
+                </li>
+                <li>
+                    <a href="request-analysis-form.html">Request Analysis</a>
+                </li>
+                <li>
+                    <a href="request.html">Requests</a>
+                </li>
+                <li>
+                    <a href="staff-add.html">Add Staff</a>
+                </li>
+                <li>
+                    <a href="staff.html">Staffs</a>
+                </li>
+                <li>
+                    <a href="survey.html">Survey</a>
+                </li>
+                <li>
+                    <a href="users.html">User</a>
+                </li>
+            </ul>
+        </nav>
+    
+        <!-- Page Content  -->
+        <div id="content">
+            <div class="container border p-4">
+                <!-- Design a page with a form that allows the user to make a request for a sport or wellness. -->
+        
+                <!-- It will contain current user details and a textarea for information about the request. -->
+        
+                <!-- And a button to submit the request. -->
+                <div class="request-form">
+                    <h4 class="pb-2">Edit Email Template</h4>
+                    <div class="border-top mb-4"></div>
+                    <form action="">
+                        <div class="col-12 col-xl-12">
+                            <div class="row">
+                                <div class="col-sm-12 col-lg-12 col-xl-12 col-md-12  mb-3">
+                                    <div class="mb-3">
+                                        <label for="Email Subject" class="form-label">Email Subject</label>
+                                        <input type="text" class="form-control" id="Email Subject" placeholder="Email Subject">
+                                      </div>
+                                      <div class="mb-3">
+                                        <label for="Email Body" class="form-label">Email Body</label>
+                                        <textarea class="form-control" id="Email Body" rows="3" placeholder="Email Body"></textarea>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-2">
+                            <button class="btn btn-primary" type="button">Save</button>
+                          </div>
+                    </form>
+                </div>
+        
+            </div>
+    
+        </div>
     </div>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

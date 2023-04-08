@@ -5,22 +5,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sport and Wellness - Admin Details</title>
+    <title>Sport and Wellness - Admin Add</title>
     <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
 
     <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    
 </head>
 
 <body>
-    <div class="container">
-        <!-- Show the admin details with the following information: -->
-
-        <!-- Admin Name, Admin Email, address, phone, Admin Password, Admin Status etc -->
-
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Admin</h3>
+                <nav class="navbar navbar-expand-lg">
+    
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                    </button>
+            </nav>
+            </div>
+    
+            <ul class="list-unstyled components">
+    
+                <li>
+                    <a href="dashboard.html">Dashboard</a>
+                </li>
+                <li>
+                    <a href="admin-add.html">Add Admin</a>
+                </li>
+                <li>
+                    <a href="admins.html" class="active">Admins</a>
+                </li>
+                <li>
+                    <a href="email-template.html">Email Templates</a>
+                </li>
+                <li>
+                    <a href="request-analysis-form.html">Request Analysis</a>
+                </li>
+                <li>
+                    <a href="request.html">Requests</a>
+                </li>
+                <li>
+                    <a href="staff-add.html">Add Staff</a>
+                </li>
+                <li>
+                    <a href="staff.html">Staffs</a>
+                </li>
+                <li>
+                    <a href="survey.html">Survey</a>
+                </li>
+                <li>
+                    <a href="users.html">User</a>
+                </li>
+            </ul>
+        </nav>
+    
+        <!-- Page Content  -->
+        <div id="content">
+            <div class="container border p-4">
+                <div class="profile-detail">
+                    <h4 class="pb-2">Admin Detail</h4>
+                    <div class="border-top mb-4"></div>
+                    <div class="row">
+                        <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <p>Admin Name : <span>Sulaiman Khan</span></p>
+                            <p>Admin Email : <span>xxxxx</span></p>
+                            <p>Address : <span>xxxxx</span></p>
+                            <p>Admin Status : <span>Active</span></p>
+                            
+                        </div>
+                        <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <p>Email : <span>xxxxx</span></p>
+                            <p>Phone : <span>03123456789</span></p>
+                            <p>Password : <span>xxxxx</span></p>
+                        </div>
+                        <div class="col-6 mt-4">
+                            <button class="btn btn-primary" type="button">Edit</button>
+                          </div>
+                    </div>
+                </div>
+                
+        
+            </div>
+    
+        </div>
     </div>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

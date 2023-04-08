@@ -5,21 +5,163 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sport and Wellness - Requests</title>
+    <title>Sport and Wellness - Admin Add</title>
     <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
 
     <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    
 </head>
 
 <body>
-    <div class="container">
-        <!-- Show a list of requests with the following information: -->
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Admin</h3>
+                <nav class="navbar navbar-expand-lg">
+    
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                    </button>
+            </nav>
+            </div>
+    
+            <ul class="list-unstyled components">
+    
+                <li>
+                    <a href="dashboard.html">Dashboard</a>
+                </li>
+                <li>
+                    <a href="admin-add.html">Add Admin</a>
+                </li>
+                <li>
+                    <a href="admins.html" >Admins</a>
+                </li>
+                <li>
+                    <a href="email-template.html">Email Templates</a>
+                </li>
+                <li>
+                    <a href="request-analysis-form.html">Request Analysis</a>
+                </li>
+                <li>
+                    <a href="request.html" class="active">Requests</a>
+                </li>
+                <li>
+                    <a href="staff-add.html">Add Staff</a>
+                </li>
+                <li>
+                    <a href="staff.html">Staffs</a>
+                </li>
+                <li>
+                    <a href="survey.html">Survey</a>
+                </li>
+                <li>
+                    <a href="users.html">User</a>
+                </li>
+            </ul>
+        </nav>
+    
+        <!-- Page Content  -->
+        <div id="content">
+            <div class="container">
+                <h4 class="pb-2">Requests</h4>
+                    <div class="border-top mb-4"></div>
+                <div class="dasboard-table">
+                  <table class="table table-bordered table-striped table-hover table-responsive">
+                      <thead>
+                        <tr>
+                          <th scope="col">ID</th>
+                          <th scope="col">Type </th>
+                          <th scope="col">Status</th>
+                          <th scope="col">Date</th>
+                          <th scope="col">Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>12345</td>
+                          <td>xxxxx</td>
+                          <td>active</td>
+                          <td>12/02/2023</td>
+                          <td>
+                            <a href="request-details.html" class="btn-primary">Details</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>12345</td>
+                          <td>xxxxx</td>
+                          <td>active</td>
+                          <td>12/02/2023</td>
+                          <td>
+                            <a href="request-details.html" class="btn-primary">Details</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>12345</td>
+                          <td>xxxxx</td>
+                          <td>active</td>
+                          <td>12/02/2023</td>
+                          <td>
+                            <a href="request-details.html" class="btn-primary">Details</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>12345</td>
+                          <td>xxxxx</td>
+                          <td>active</td>
+                          <td>12/02/2023</td>
+                          <td>
+                            <a href="request-details.html" class="btn-primary">Details</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>12345</td>
+                          <td>xxxxx</td>
+                          <td>active</td>
+                          <td>12/02/2023</td>
+                          <td>
+                            <a href="request-details.html" class="btn-primary">Details</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>12345</td>
+                          <td>xxxxx</td>
+                          <td>active</td>
+                          <td>12/02/2023</td>
+                          <td>
+                            <a href="request-details.html" class="btn-primary">Details</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>12345</td>
+                          <td>xxxxx</td>
+                          <td>active</td>
+                          <td>12/02/2023</td>
+                          <td>
+                            <a href="request-details.html" class="btn-primary">Details</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>12345</td>
+                          <td>xxxxx</td>
+                          <td>active</td>
+                          <td>12/02/2023</td>
+                          <td>
+                            <a href="request-details.html" class="btn-primary">Details</a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
         
-        <!-- Request ID, Request Type, Request Status, Request Date, Request Details -->
+            </div>
+    
+        </div>
     </div>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

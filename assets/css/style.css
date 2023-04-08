@@ -242,6 +242,11 @@ float: right;
     transition: all .5s ease-out;
     opacity: 1;
   }
+
+  /* admin */
+
+
+  
 @media (min-width: 320px) and (max-width: 620px){
    
     .dasboard-nav{
