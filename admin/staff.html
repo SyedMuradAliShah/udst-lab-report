@@ -12,61 +12,78 @@
 
     <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
     
 </head>
 
 <body>
-    <div class="wrapper">
-        <!-- Sidebar  -->
-        <nav id="sidebar">
-            <div class="sidebar-header">
-                <h3>Admin</h3>
-                <nav class="navbar navbar-expand-lg">
-    
-                    <button type="button" id="sidebarCollapse" class="btn btn-info">
-                        <i class="fas fa-align-left"></i>
-                    </button>
-            </nav>
-            </div>
-            
-            <ul class="list-unstyled components">
-    
-                <li>
-                    <a href="dashboard.html">Dashboard</a>
-                </li>
-                <li>
-                    <a href="admin-add.html">Add Admin</a>
-                </li>
-                <li>
-                    <a href="admins.html" >Admins</a>
-                </li>
-                <li>
-                    <a href="email-template.html">Email Templates</a>
-                </li>
-                <li>
-                    <a href="request-analysis-form.html">Request Analysis</a>
-                </li>
-                <li>
-                    <a href="request.html" >Requests</a>
-                </li>
-                <li>
-                    <a href="staff-add.html">Add Staff</a>
-                </li>
-                <li>
-                    <a href="staff.html" class="active">Staffs</a>
-                </li>
-                <li>
-                    <a href="survey.html">Survey</a>
-                </li>
-                <li>
-                    <a href="users.html">User</a>
-                </li>
+  <nav class="navbar navbar-expand-lg p-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" style="color: #fff;" href="dashboard.html">
+        <img src="assets/pics/logo-desktop.png" alt="" width="40px">
+    </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse shadow-none " id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="dashboard.html">Dashboard</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Admin
+            </a>
+            <ul class="dropdown-menu border-0 shadow-sm p-0">
+              <li><a class="dropdown-item" href="admin-add.html">Add Admin</a></li>
+              <li><a class="dropdown-item" href="admin-details.html">Edit Admin</a></li>
+              <li><a class="dropdown-item" href="admin-details.html">Admin Detail</a></li>
             </ul>
-        </nav>
-    
-        <!-- Page Content  -->
-        <div id="content">
-            <div class="container">
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Email Template
+            </a>
+            <ul class="dropdown-menu border-0 shadow-sm p-0">
+              <li><a class="dropdown-item" href="email-template.html">Add Email Template</a></li>
+              <li><a class="dropdown-item" href="email-template-edit.html">Edit Email Template</a></li>
+              <li><a class="dropdown-item" href="email-template.html">Email Template Detail</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Requests
+            </a>
+            <ul class="dropdown-menu border-0 shadow-sm p-0">
+              <li><a class="dropdown-item" href="request.html">All Requests</a></li>
+              <li><a class="dropdown-item" href="request-details.html">Request Detail</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Survey
+            </a>
+            <ul class="dropdown-menu border-0 shadow-sm p-0">
+              <li><a class="dropdown-item" href="survey.html">Surveys</a></li>
+              <li><a class="dropdown-item" href="survey-details.html">Surveys Detail</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="d-flex">
+            <div class="dropdown rounded-pill" style="background-color: #fff;" >
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="assets/pics/profile.jpg" class="rounded-circle" alt="" width="40px" height="40px"> Sulaiman
+                </button>
+                <ul class="dropdown-menu border-0 shadow-sm p-0">
+                  <li><a class="dropdown-item" href="#">Edit Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+            <div class="container mt-5 p-4">
                 <h4 class="pb-2">Staffs</h4>
                     <div class="border-top mb-4"></div>
                 <div class="dasboard-table">
@@ -140,9 +157,6 @@
                   </div>
         
             </div>
-    
-        </div>
-    </div>
     <script src="assets/js/script.js"></script>
 </body>
 
