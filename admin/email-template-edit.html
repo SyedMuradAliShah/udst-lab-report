@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/summernote/summernote.min.css">
 
     <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/summernote/summernote.min.js"></script>
     
 </head>
 
@@ -105,13 +107,17 @@
                         <div class="col-12 col-xl-12">
                             <div class="row">
                                 <div class="col-sm-12 col-lg-12 col-xl-12 col-md-12  mb-3">
+                                  <div class="mb-3">
+                                    <label for="Name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="Name" placeholder="Name ">
+                                  </div>
                                     <div class="mb-3">
                                         <label for="Email Subject" class="form-label">Email Subject</label>
                                         <input type="text" class="form-control" id="Email Subject" placeholder="Email Subject">
                                       </div>
-                                      <div class="mb-3">
-                                        <label for="Email Body" class="form-label">Email Body</label>
-                                        <textarea class="form-control" id="Email Body" rows="3" placeholder="Email Body"></textarea>
+                                    
+                                      <div class="mb-3 mt-5">
+                                        <textarea rows="8" placeholder="Email Body" class="form-control summernote" style="height: 100px;"></textarea>
                                       </div>
                                 </div>
                             </div>
@@ -123,7 +129,11 @@
                 </div>
         
             </div>
-    
+    <script>
+      $(document).ready(function() {
+  $('.summernote').summernote();
+});
+    </script>
     <script src="assets/js/script.js"></script>
 </body>
 

@@ -331,6 +331,9 @@ nav .nav-link{
     background-color: white;
     box-shadow: 0px 5px 10px rgb(220, 220, 220);
 }
+.note-editable{
+    height: 250px;
+}
 .form-label{
     font-size: 0.9rem;
 }
