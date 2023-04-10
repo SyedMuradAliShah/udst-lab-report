@@ -272,7 +272,7 @@ float: right;
     background-position: center;
 }
 .bg-img::before{
-    background-color: #000000;
+    background-color: #0055b8;
     position: absolute;
     top: 0;
     left: 0;
@@ -307,6 +307,7 @@ nav{
 }
 nav .nav-link{
     color: #ffffff !important;
+    font-size: 15px;
 }
 .dropdown-menu{
     overflow: hidden;
@@ -314,10 +315,17 @@ nav .nav-link{
 .dropdown-menu  a{
     border-bottom: 1px solid rgb(198, 198, 198);
     padding: 10px 20px;
+    font-size: 15px;
 }
 .dropdown-menu  a:hover{
     background-color: #0055b8;
     color: white;
+}
+.d-flex .dropdown-toggle{
+    font-size: 14px !important;
+}
+.d-flex .dropdown-menu{
+    font-size: 14px !important;
 }
 .container{
     background-color: white;

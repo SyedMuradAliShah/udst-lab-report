@@ -11,78 +11,87 @@
     <link rel="stylesheet" href="assets/css/all.min.css">
 
     <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
-    <script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg p-3">
-        <div class="container-fluid">
-          <a class="navbar-brand" style="color: #fff;" href="dashboard.html">
-            <img src="assets/pics/logo-desktop.png" alt="" width="40px">
-        </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse shadow-none " id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="dashboard.html">Dashboard</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Admin
-                </a>
-                <ul class="dropdown-menu border-0 shadow-sm p-0">
-                  <li><a class="dropdown-item" href="admin-add.html">Add Admin</a></li>
-                  <li><a class="dropdown-item" href="admin-details.html">Edit Admin</a></li>
-                  <li><a class="dropdown-item" href="admin-details.html">Admin Detail</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Email Template
-                </a>
-                <ul class="dropdown-menu border-0 shadow-sm p-0">
-                  <li><a class="dropdown-item" href="email-template.html">Add Email Template</a></li>
-                  <li><a class="dropdown-item" href="email-template-edit.html">Edit Email Template</a></li>
-                  <li><a class="dropdown-item" href="email-template.html">Email Template Detail</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Requests
-                </a>
-                <ul class="dropdown-menu border-0 shadow-sm p-0">
-                  <li><a class="dropdown-item" href="request.html">All Requests</a></li>
-                  <li><a class="dropdown-item" href="request-details.html">Request Detail</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Survey
-                </a>
-                <ul class="dropdown-menu border-0 shadow-sm p-0">
-                  <li><a class="dropdown-item" href="survey.html">Surveys</a></li>
-                  <li><a class="dropdown-item" href="survey-details.html">Surveys Detail</a></li>
-                </ul>
-              </li>
+  <nav class="navbar navbar-expand-lg p-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" style="color: #fff;" href="dashboard.html">
+        <img src="assets/pics/logo-desktop.png" alt="" width="40px">
+    </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse shadow-none " id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="dashboard.html">Dashboard</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Admin
+            </a>
+            <ul class="dropdown-menu border-0 shadow-sm p-0">
+              <li><a class="dropdown-item" href="admin-add.html">Add Admin</a></li>
+              <li><a class="dropdown-item" href="admins.html">All Admin</a></li>
+              <li><a class="dropdown-item" href="admin-details.html">Edit Admin</a></li>
+              <li><a class="dropdown-item" href="admin-details.html">Admin Detail</a></li>
             </ul>
-            <div class="d-flex">
-                <div class="dropdown rounded-pill" style="background-color: #fff;" >
-                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <img src="assets/pics/profile.jpg" class="rounded-circle" alt="" width="40px" height="40px"> Sulaiman
-                    </button>
-                    <ul class="dropdown-menu border-0 shadow-sm p-0">
-                      <li><a class="dropdown-item" href="#">Edit Profile</a></li>
-                      <li><a class="dropdown-item" href="#">Logout</a></li>
-                    </ul>
-                  </div>
-            </div>
-          </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Email Template
+            </a>
+            <ul class="dropdown-menu border-0 shadow-sm p-0">
+              <li><a class="dropdown-item" href="email-template-edit.html">Add Email Template</a></li>
+              <li><a class="dropdown-item" href="email-template-edit.html">Edit Email Template</a></li>
+              <li><a class="dropdown-item" href="email-template.html">Email Template Detail</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Requests
+            </a>
+            <ul class="dropdown-menu border-0 shadow-sm p-0">
+              <li><a class="dropdown-item" href="request.html">All Requests</a></li>
+              <li><a class="dropdown-item" href="request-details.html">Request Detail</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Survey
+            </a>
+            <ul class="dropdown-menu border-0 shadow-sm p-0">
+              <li><a class="dropdown-item" href="survey.html">Surveys</a></li>
+              <li><a class="dropdown-item" href="survey-details.html">Surveys Detail</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              User
+            </a>
+            <ul class="dropdown-menu border-0 shadow-sm p-0">
+              <li><a class="dropdown-item" href="users.html">Users</a></li>
+              <li><a class="dropdown-item" href="user-details.html">User Detail</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="d-flex profile">
+            <div class="dropdown rounded-pill" style="background-color: #fff;" >
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="assets/pics/profile.jpg" class="rounded-circle" alt="" width="40px" height="40px"> Sulaiman
+                </button>
+                <ul class="dropdown-menu border-0 shadow-sm p-0">
+                  <li><a class="dropdown-item" href="#">Edit Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </div>
         </div>
-      </nav>
+      </div>
+    </div>
+  </nav>
             <div class="container border mt-5 p-4">
                 <div class="profile-detail">
                     <h4 class="pb-2">Admin Detail</h4>
