@@ -40,6 +40,14 @@ body{
 a{
     text-decoration: none;
 }
+.back{
+    position: relative;
+    margin: 10px 20px;
+    display: inline-block;
+    background-color: white !important;
+    color: #0055b8 !important;
+    border-radius: 20px;
+}
 .content{
     background-color: #eeeeee;
     border-radius: 10px;
@@ -49,7 +57,7 @@ a{
     color: red;
 }
 .btn-primary{
-    background-color: #0055b8 !important;
+    background-color: #0055b8;
     padding: 10px 20px;
     font-weight: 500;
     color: white;
