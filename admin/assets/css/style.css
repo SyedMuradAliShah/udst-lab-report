@@ -324,7 +324,7 @@ nav .nav-link{
 .d-flex .dropdown-toggle{
     font-size: 14px !important;
 }
-.d-flex .dropdown-menu{
+.d-flex .dropdown-menu a{
     font-size: 14px !important;
 }
 .container{
