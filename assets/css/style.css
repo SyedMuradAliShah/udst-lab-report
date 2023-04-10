@@ -34,6 +34,12 @@
 }
 body{
     font-family: 'Roboto Slab', serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.content-wrapper{
+    flex: 1;
 }
 a{
     text-decoration: none;
@@ -67,9 +73,12 @@ padding: 10px;
     color: #0055b8;
     font-size: 1.3rem;
 }
+.top-navbar{
+    border-bottom: 3px solid #0055b8;
+}
 .navigation{
-    border-bottom: 2px solid #0055b8;
-    padding: 2rem;
+
+
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
