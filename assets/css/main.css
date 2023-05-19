@@ -1,0 +1,402 @@
+/*
+*       SOFTWARE FLARE
+*   RULES FOR WRITTING CSS
+*
+* 1. Use lowercase
+* Example: .btn-primary { ... }
+* Avoid: .btn-Primary { ... }, .btn_Primary { ... }, .btnPrimary { ... }, .BTN-PRIMARY { ... }, .BTN_PRIMARY { ... }, .BTNPRIMARY { ... }
+*
+* 2. Use hyphens to separate words
+* Example: .btn-primary { ... }
+* Avoid: .btnPrimary { ... }, .btn_primary { ... }, .btnprimary { ... }
+*
+* 3. Avoid using default tags for styling: When writing CSS, it's essential to avoid using default HTML tags as selectors (e.g., 'button', 'a', 'p', etc.) for styling elements. This can lead to unintended consequences and make the code difficult to maintain. Instead, use class-based selectors for more specific and precise styling.
+* Example: .btn-primary { ... }
+* Avoid: button { ... }, a { ... }, p { ... }
+*
+* 4. Use custom class names for buttons: To style buttons, it's a good practice to create custom class names that describe their purpose, appearance, or functionality. For example, instead of using a generic '.btn' class, create more specific classes like '.btn-primary', '.btn-secondary', or '.btn-customname'. This will make it easier to identify and manage button styles throughout the project.
+* Example: <button class="btn btn-customname">Custom Button</button>
+* Avoid: <button class="btn">Custom Button</button>, <button class="csa-btn">Custom Button</button>, <button>Custom Button</button>
+*
+* 5. Avoid combining button classes with parent elements or classes: As you've mentioned, avoid using selectors like '.parent-class .btn-customname', '.parent-class form .btn-customname', or 'form .btn-customname'. Instead, apply the specific button classes directly to the button elements in your HTML code
+* Example: <button class="btn btn-customname">Custom Button</button>
+* Avoid: <div class="parent-class"><button class="btn btn-customname">Custom Button</button></div>
+* Avoid: <form><button class="btn btn-customname">Custom Button</button></form>
+*
+*
+*  Let Me know if you have any question.
+**/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Slab', serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content-wrapper {
+    flex: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content {
+    background-color: #eeeeee;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+    .content p {
+        color: black;
+    }
+
+.btn-primary {
+    background-color: #0055b8 !important;
+    padding: 10px 20px;
+    font-weight: 500;
+    color: white;
+    border: none;
+}
+
+.form-inputs h4 {
+    background-color: #0055b8;
+    color: white;
+    padding: 10px;
+}
+
+.new-request {
+    background-color: #dadada26;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+    .new-request h6 {
+        color: #0055b8;
+        font-size: 1.3rem;
+    }
+
+.top-navbar {
+    border-bottom: 3px solid #0055b8;
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+}
+
+.dasboard-nav {
+    position: absolute;
+    right: 0;
+}
+
+.navigation .logo a {
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+}
+
+.navigation .navbar {
+    display: none;
+}
+
+.brand-name {
+    font-size: 25px;
+    color: black;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.tab {
+    border-bottom: 2px solid #0055b8;
+    padding-bottom: 9px;
+}
+
+    .tab .account-btn {
+        padding: 10px 20px;
+        color: #0055b8;
+    }
+
+    .tab .active {
+        background-color: #0055b8;
+        color: white !important;
+    }
+
+.form-side {
+    width: 100%;
+}
+
+.contactus {
+    background-color: #eeeeee;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.container {
+    max-width: 960px;
+}
+
+footer {
+    background-color: #0055b8;
+}
+
+    footer .container {
+        max-width: 1344px;
+    }
+
+.footer-box {
+    display: grid;
+    grid-template-columns: 83px 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 15px;
+    align-items: end;
+    padding: 30px 0px;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+.social-media {
+    text-align: center;
+}
+
+    .social-media a {
+        margin: 10px 15px;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .social-media p {
+        margin: 0;
+    }
+
+    .social-media a img {
+        width: 30px;
+        height: 30px;
+    }
+
+.images {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+}
+
+#Cars2 {
+    display: none;
+}
+
+    #Cars2 textarea {
+        height: 150px;
+    }
+
+.login {
+    border: 1px solid #80808082;
+    padding: 40px 20px 20px 20px;
+}
+
+.navbar-toggler {
+    background-color: #0055b8 !important;
+}
+
+.navbar-collapse {
+    box-shadow: 0px 3px 8px gray;
+}
+
+.dasboard-table {
+    overflow: auto;
+}
+
+    .dasboard-table table {
+        width: 100%;
+    }
+
+        .dasboard-table table td .btn-primary {
+            padding: 6px;
+        }
+
+.profile-detail p {
+    margin: 5px auto;
+    width: 90%;
+    border-bottom: 1px solid #dde2e6;
+    padding: 5px 0px;
+    font-weight: 500;
+}
+
+    .profile-detail p span {
+        float: right;
+    }
+
+/* Rating Star Widgets Style */
+.rating-stars ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+    .rating-stars ul > li.star {
+        display: inline-block;
+    }
+
+        /* Idle State of the stars */
+        .rating-stars ul > li.star > i.fa {
+            font-size: 1em; /* Change the size of the stars */
+            color: #ccc; /* Color on idle state */
+        }
+
+        /* Hover state of the stars */
+        .rating-stars ul > li.star.hover > i.fa {
+            color: #FFCC36;
+        }
+
+        /* Selected state of the stars */
+        .rating-stars ul > li.star.selected > i.fa {
+            color: #FF912C;
+        }
+
+.question-star {
+    position: relative;
+}
+
+.rating-widget {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.hide {
+    display: none;
+}
+
+.hidden {
+    display: none;
+    padding: 10px 25px;
+    /*   opacity: 0; */
+}
+
+.shown {
+    display: visible;
+    transition: all .5s ease-out;
+    opacity: 1;
+}
+
+/* admin */
+
+
+
+@media (min-width: 320px) and (max-width: 620px) {
+
+    .dasboard-nav {
+        display: none;
+    }
+
+    .footer-box {
+        display: block;
+        text-align: center;
+    }
+
+        .footer-box div {
+            padding: 10px;
+        }
+
+    .logo {
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+
+    .navigation .navbar {
+        display: block;
+    }
+
+    .navigation {
+        padding: 2rem 0rem;
+    }
+
+    .brand-name {
+        width: 27%;
+    }
+
+        .brand-name h2 {
+            font-size: 15px;
+        }
+
+    .dasboard-table table {
+        width: max-content;
+    }
+
+    .rating-widget {
+        position: relative;
+        width: 100%;
+        float: inherit !important;
+    }
+
+    .rating-stars {
+        text-align: left !important;
+    }
+}
+
+
+
+
+
+
+
+#regForm {
+    background-color: #ffffff;
+  }
+  
+  h1 {
+    text-align: center;  
+  }
+  
+  input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    border: 1px solid #aaaaaa;
+  }
+  
+  /* Mark input boxes that gets an error on validation: */
+  input.invalid {
+    background-color: #ffdddd;
+  }
+  
+  /* Hide all steps by default: */
+  .tab {
+    display: none;
+    border-bottom: 0;
+  }
+  
+  button {
+    background-color: #0055b8;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  #prevBtn {
+    background-color: #bbbbbb;
+  }
+  
